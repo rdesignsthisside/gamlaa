@@ -638,15 +638,16 @@ main#home .home_form .home_form_flex form {
     flex-wrap: wrap;
     justify-content: space-between;
     row-gap: 2vw;
+    display: none;
 }
 
-main#home .home_form .home_form_flex form input {
-    width: 48%;
+main#home .home_form .home_form_flex form .form-group input {
+    width: 100%;
     font-size: 0.8vw;
     line-height: 1.2vw;
     padding: 0.3vw 1vw;
     border: none;
-    border-bottom: 2px solid #053f33;
+    border: 1px solid #053f33;
     font-family: "Montserrat", sans-serif;
 }
 
@@ -660,7 +661,7 @@ main#home .home_form .home_form_flex form textarea {
     font-family: "Montserrat", sans-serif;
 }
 
-main#home .home_form .home_form_flex form button {
+main#home .home_form .home_form_flex form .submit_btn {
     font-size: 0.8vw;
     line-height: 1.2vw;
     color: #fff;
@@ -686,8 +687,16 @@ main#home .home_form .form_shape_maquee {
     animation: green-leaf-marquee 30s linear infinite;
 }
 
+main#home .home_form .home_form_flex form .form-group {
+    width: 100%;
+    display: flex;
+    gap: 0.5vw;
+    flex-direction: column;
+}
 
-
+main#home .home_form .home_form_flex form.gamla_form {
+    display: flex;
+}
 
 
 footer {
